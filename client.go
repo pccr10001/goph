@@ -88,6 +88,7 @@ func Dial(proto string, c *Config) (*ssh.Client, error) {
 	sshConf.KeyExchanges = append(
 		sshConf.KeyExchanges,
 		"diffie-hellman-group-exchange-sha1",
+		"diffie-hellman-group1-sha1",
 	)
 	sshConf.Ciphers = append(
 		sshConf.Ciphers,
